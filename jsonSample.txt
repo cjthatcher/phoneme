@@ -1,13 +1,22 @@
 when you hit /sounds
 
-[{"name":"Consonant","phonemes":["b","c","d","f","g","h","j","k","k","m","n","p","q","r","s","t","v","w","x","y","z"]},{"name":"vowel","phonemes":["a","e","i","o","u"]}]
+[
+	{
+		"name":"Consonant",
+		"phonemes":["b","c","d","f","g","h","j","k","k","m","n","p","q","r","s","t","v","w","x","y","z"]
+	},		
+	{
+		"name":"Vowel",
+		"phonemes":["a","e","i","o","u"]
+	}
+]
 
 
-When you send me a shape, it will look like this:
+When you send me a shape (use a POST), it will look like this:
 
 
-		{
-			"sounds":["Consonant","Vowel","Consonant"],
-			"count":"10",
-			"primaryIndex":"0"
-		}
+{
+	"sounds":["Consonant","Vowel","Consonant"],
+	"count":"10",
+	"primaryIndex":"0"
+}
