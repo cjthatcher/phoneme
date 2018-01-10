@@ -2,6 +2,7 @@ package phoneme.dto;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 public class Sound {
 
@@ -19,5 +20,10 @@ public class Sound {
 
     public List<String> getPhonemes() {
         return phonemes;
+    }
+
+
+    public String getRandomPhoneme() {
+        return phonemes.get(new Random().nextInt(phonemes.size()));
     }
 }
